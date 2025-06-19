@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AutoFix - Reparación de Vehículos a Domicilio</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1>AutoFix - Reparación de Vehículos a Domicilio</h1>
+      <h1>AutoFix - Reparación de Vehículos a Domicilio</h1>
     </header>
 
     <section id="servicios">
-        <h2>Servicios y Precios</h2>
-        <div class="servicio">
-            <img src="img/cambio_aceite.png" alt="Cambio de aceite" />
-            <h3>Cambio de aceite</h3>
-            <p>Precio: $500 MXN</p>
-        </div>
-        <div class="servicio">
-            <img src="img/revision_frenos.png" alt="Revisión de frenos" />
-            <h3>Revisión de frenos</h3>
-            <p>Precio: $700 MXN</p>
-        </div>
-        <div class="servicio">
-            <img src="img/diagnostico_electrico.png" alt="Diagnóstico eléctrico" />
-            <h3>Diagnóstico eléctrico</h3>
-            <p>Precio: $600 MXN</p>
-        </div>
+      <h2>Servicios y Precios</h2>
+      <div class="servicio">
+        <img src="img/cambio_aceite.png" alt="Cambio de aceite" />
+        <h3>Cambio de aceite</h3>
+        <p>Precio: $500 MXN</p>
+      </div>
+      <div class="servicio">
+        <img src="img/revision_frenos.png" alt="Revisión de frenos" />
+        <h3>Revisión de frenos</h3>
+        <p>Precio: $700 MXN</p>
+      </div>
+      <div class="servicio">
+        <img src="img/diagnostico_electrico.png" alt="Diagnóstico eléctrico" />
+        <h3>Diagnóstico eléctrico</h3>
+        <p>Precio: $600 MXN</p>
+      </div>
     </section>
 
     <section id="formulario">
-        <h2>Solicitar Reparación</h2>
-        <form>
-            <label for="nombre">Nombre del Cliente</label>
-            <input type="text" id="nombre" name="nombre" required />
+      <h2>Solicitar Reparación</h2>
+      <form>
+        <label for="nombre">Nombre del Cliente</label>
+        <input type="text" id="nombre" name="nombre" required />
 
-            <label for="tipo">Tipo de Reparación</label>
-            <select id="tipo" name="tipo" required>
-                <option value="">Selecciona un servicio</option>
-                <option value="cambio_aceite">Cambio de aceite</option>
-                <option value="revision_frenos">Revisión de frenos</option>
-                <option value="diagnostico_electrico">Diagnóstico eléctrico</option>
-            </select>
+        <label for="tipo">Tipo de Reparación</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Selecciona un servicio</option>
+          <option value="cambio_aceite">Cambio de aceite</option>
+          <option value="revision_frenos">Revisión de frenos</option>
+          <option value="diagnostico_electrico">Diagnóstico eléctrico</option>
+        </select>
 
-            <label for="descripcion">Descripción</label>
-            <textarea id="descripcion" name="descripcion"></textarea>
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion"></textarea>
 
-            <label for="fecha">Agendar Cita</label>
-            <input type="date" id="fecha" name="fecha" required />
+        <label for="fecha">Agendar Cita</label>
+        <input type="date" id="fecha" name="fecha" required />
 
-            <h3>Información de Pago (simulado)</h3>
+        <h3>Información de Pago (simulado)</h3>
 
-            <label for="tarjeta">Número de tarjeta</label>
-            <input type="text" id="tarjeta" name="tarjeta" placeholder="**** **** **** 1234" required />
+        <label for="tarjeta">Número de tarjeta</label>
+        <input
+          type="text"
+          id="tarjeta"
+          name="tarjeta"
+          placeholder="**** **** **** 1234"
+          required
+        />
 
-            <label for="titular">Nombre del titular</label>
-            <input type="text" id="titular" name="titular" required />
+        <label for="titular">Nombre del titular</label>
+        <input type="text" id="titular" name="titular" required />
 
-            <label for="cvv">CVV</label>
-            <input type="text" id="cvv" name="cvv" required />
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" required />
 
-            <button type="submit">Confirmar Solicitud</button>
-        </form>
+        <button type="submit">Confirmar Solicitud</button>
+      </form>
     </section>
-
-</body>
+  </body>
 </html>
