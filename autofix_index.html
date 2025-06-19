@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AutoFix - Reparación de Vehículos</title>
+    <link rel="stylesheet" href="autofix_style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>AutoFix - Reparación de Vehículos a Domicilio</h1> <br><br><br>
+
+            <h2>Servicios y Precios</h2>
+                <div class="services">
+                    <div class="card">
+                        <img src="/fitlife/img/descarga.png" alt="Cambio de aceite" />
+                        <p><strong>Cambio de aceite</strong><br>Precio: Desde sólo <br> $ 39.990</p>
+                    </div>
+                    <div class="card">
+                        <img src="/fitlife/img/frenos.png" alt="Revisión de frenos" />
+                        <p><strong>Revisión de frenos</strong><br>Precio: Dede sólo <br> $ 19.990</p>
+                    </div>
+                    <div class="card">
+                        <img src="/fitlife/img/electrico.jpg" alt="Diagnóstico eléctrico" />
+                        <p><strong>Diagnóstico eléctrico</strong><br>Precio: A sólo <br> $ 5.990</p>
+                    </div>
+                </div>
+
+        <h2>Solicitar Reparación</h2>
+            <form class="repair-form">
+            <label>Nombre del Cliente</label>
+            <input type="text" placeholder="Ingrese su nombre" />
+            <label>Tipo de Reparación</label>
+                <select>
+                    <option>Seleccione un servicio</option>
+                    <option>Cambio de aceite</option>
+                    <option>Revisión de frenos</option>
+                    <option>Diagnóstico eléctrico</option>
+                </select>
+                <label>Descripción</label>
+                <textarea placeholder="Detalles adicionales..."></textarea>
+                <label>Agendar Cita</label>
+                <input type="datetime-local" />
+
+        <h3>Información de Pago</h3>
+                <label>Número de tarjeta</label>
+                <input type="text" placeholder="**** **** **** 1234" />
+                <label>Nombre del titular</label>
+                <input type="text" />
+                <label>CVV</label>
+                <input type="text" />
+                <button type="submit">Confirmar Solicitud</button>
+            </form>
+    </div>
+</body>
+</html>
